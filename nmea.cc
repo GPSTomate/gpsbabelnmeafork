@@ -492,10 +492,10 @@ NmeaFormat::gpgga_parse(const QString& ibuf)
     case 1:
       waypt->fix = (nsats > 3) ? (fix_3d) : (fix_2d);
       break;
-    case 2:
+    case 5:
       waypt->fix = fix_dgps;
       break;
-    case 3:
+    case 4:
       waypt->fix = fix_pps;
       break;
     default:
